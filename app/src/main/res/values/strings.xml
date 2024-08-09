@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">AndroidWithKotlin</string>
+    <string name="radio_button">RadioButton</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="pre_msg">CheckedTextView is</string>
+    <string name="checked">checked</string>
+    <string name="unchecked">unchecked</string>
+    <string name="checkedTextView">CheckedTextView</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+
+    <string name="hint">Please type Something…</string>
+    <string name="submit">Submit</string>
+    <string name="entered_text">Entered Text:</string>
+
+    <string-array name="countries_array">
+        <item>India</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+    </string-array>
+
+    <string name="this_is_imageview">This is imageview</string>
+    <string name="change_image">Change Image</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="paused">Paused…</string>
+    <string name="playing">Playing…</string>
+    <string name="site_url">https://tutorialwing.com</string>
+    <string name="no_image">No Image</string>
+    <string name="nested_scroll_text">Tutorialwing.com presents tutorial on NestedScrollView!
+        NestedScrollView is just like ScrollView, but it supports acting as both a nested
+        scrolling parent and child on both new and old versions of Android. Nested scrolling
+        is enabled by default. NestedScrollView is used when there is need for scrolling inside
+        another scrolling view. Normally this would be difficult task because system would be
+        unable to decide which view to scroll. This is where NestedScrollView comes into role.
+    </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tutorial_by">Tutorial By Tutorialwing.com</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fragment</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="presented_by">Presented by Tutorialwing.com</string>
+    <string name="profile">Profile</string>
+    <string name="recent">Recent</string>
+    <string name="home">Home</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="selected_time">The Selected time is : </string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="playying">playing…</string>
+    <string name="stopped">Stopped…</string>
+    <string name="prev">Previous</string>
+    <string name="item_post_1">Text at position 1</string>
+    <string name="item_post_2">Button at position 2</string>
+    <string name="item_post_4">Text at position 4</string>
+    <string name="flipping_started">Flipping Started…</string>
+    <string name="flipping_stopped">Flipping Stopped…</string>
+    <string name="hide">HIDE</string>
+    <string name="show">SHOW</string>
+    <string name="sub_view">This view is inflated by ViewStub by calling either inflate() or setVisibility(true) method</string>
+    <string name="message">Click on Floating Action Button</string>
+    <string name="email">Email</string>
+    <string name="permission_required">Camera permission required to run application.</string>
+    <string name="take_photo">TAKE PHOTO</string>
+    <string name="permissions_required">Permission Required</string>
+    <string name="permission_message">You must grant permission to access camera and external storage to run this application.</string>
+    <string name="permission_warning">All permissions are required.</string>
+    <string name="yes">Yes</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+
+    <dimen name="img_width">50dp</dimen>
+    <dimen name="img_height">50dp</dimen>
+    <dimen name="txv_padding">16dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+
+    <string name="actions">Actions</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="add_person">Add Person</string>
+
+    <string name="india">India</string>
+    <string name="biking">Biking</string>
+    <string name="aeroplane">Aeroplane</string>
+    <string name="mobile">Mobile</string>
+
+    <string name="choose_amenities">Choose Amenities</string>
+    <string name="elevator">Elevator</string>
+    <string name="washer_dryer">Washer / Dryer</string>
+    <string name="fireplace">Fireplace</string>
+    <string name="wheelchair_access">Wheelchair Access</string>
+    <string name="dogs_ok">Dogs OK</string>
+
+    <string name="select_type">Select type</string>
+    <string name="extra_soft">Extra Soft</string>
+    <string name="soft">Soft</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="extra_hard">Extra Hard</string>
+
+    <string name="choose_action">Choose Action</string>
+    <string name="add_item">Add Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="no_match">No match found</string>
+    <string name="animal_image_description">Animal Image Description</string>
+    <string name="hero_image_description">Hero Image Description</string>
+    <string name="actress_image_description">Actress Image Description</string>
+    <string name="flower_image_description">Flower Image Description</string>
+    <string name="scrolled_content">This content is scrolled with appBarLayout scroll.</string>
+    <string name="scrollable_content">This text will be visible even after scroll up.</string>
+    <string name="selected_tab">Selected tab: %1$s</string>
+
+    <string name="video_playlist">Video Playlist</string>
+    <string name="audio_playlist">Audio Playlist</string>
+    <string name="homepage">Homepage</string>
+    <string name="gallery">Gallery</string>
+    <string name="music_fragment">Music Fragment</string>
+    <string name="movie_fragment">Movie Fragment</string>
+
+    <string name="floating_action_button">Floating Action Button</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="slideshow">Slide Show</string>
+    <string name="gallery_ui">Gallery UI selected!</string>
+    <string name="home_ui">Home UI selected!</string>
+    <string name="slideshow_ui">SlideShow UI selected!</string>
+
+    <string name="wishlist">Wishlist</string>
+    <string name="profile_ui">Profile UI Selected!</string>
+    <string name="wishlist_ui">Wishlist UI selected!</string>
+
+    <string name="textview_3">TextView 3</string>
+    <string name="textview_2">TextView 2</string>
+    <string name="textview_1">TextView 1</string>
+    <string name="hide_views">Hide Views</string>
+    <string name="show_views">Show Views</string>
+
+    <string name="this_is_textview">This is textView.</string>
+    <string name="button">Button</string>
+
+    <string name="textview1_1">[TextView 1]</string>
+    <string name="textview2_2">[TextView 2]</string>
+    <string name="textview3_3">[TextView 3]</string>
+    <string name="textview_4">[TextView 4]</string>
+    <string name="textview_5">[TextView 5]</string>
+
+
+</resources>

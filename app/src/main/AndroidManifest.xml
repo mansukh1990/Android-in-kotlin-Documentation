@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidwithkotlin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidWithKotlin"
+        tools:targetApi="31">
+        <activity
+            android:name=".Layer.Layer"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Flow.Flow"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Guideline.Guideline"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Barrier.Barrier"
+            android:exported="false" />
+        <activity
+            android:name=".Group.Group"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavigationView.BottomNavigationView"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationView.NavigationView"
+            android:exported="false" />
+        <activity
+            android:name=".BottomAppBar.BottomAppBar"
+            android:exported="false" />
+        <activity
+            android:name=".TabLayoutWithAppBarLayoutWithViewPager.TabLayoutWithAppBarLayoutWithViewPager"
+            android:exported="false" />
+        <activity
+            android:name=".TabLayoutWithViewPager2.TabLayoutWithViewPager2"
+            android:exported="false" />
+        <activity
+            android:name=".AppBarLayoutWithViewPager.AppBarLayoutWithViewPager"
+            android:exported="false" />
+        <activity
+            android:name=".TabLayoutWithViewPager.TabLayoutWithViewPager"
+            android:exported="false" />
+        <activity
+            android:name=".TabLayout.TabLayout"
+            android:exported="false" />
+        <activity
+            android:name=".Toolbar.Toolbar"
+            android:exported="false" />
+        <activity
+            android:name=".AppBarLayout.AppBarLayout"
+            android:exported="false" />
+        <activity
+            android:name=".CardView.CardViewSecond"
+            android:exported="false" />
+        <activity
+            android:name=".CardView.CardView"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerViewStaggeredGridLayout.RecyclerViewStaggeredGridLayout"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerViewGridLayout.RecyclerViewGridLayout"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerViewHorizontal.RecyclerViewHorizontal"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.Recyclerview.RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalDivider.HorizontalDivider"
+            android:exported="false" />
+        <activity
+            android:name=".SearchView.SearchView"
+            android:exported="false" />
+        <activity
+            android:name=".Chip.ChipAction.ChipAction"
+            android:exported="false" />
+        <activity
+            android:name=".Chip.ChipChoice.ChipChoice"
+            android:exported="false" />
+        <activity
+            android:name=".Chip.ChipFilter.ChipFilter"
+            android:exported="false" />
+        <activity
+            android:name=".Chip.ChipGroup.ChipGroup"
+            android:exported="false" />
+        <activity
+            android:name=".Chip.ChipWithHorizontalScrollView.ChipWithHorizontalScrollView"
+            android:exported="false" />
+        <activity
+            android:name=".Chip.ChipInput.ChipInput"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPager2.ViewPagerWithFragment.ViewPagerWithFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPager2.ViewPagerTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ExtendedFloatingActionButton.ExtendedFloatingActionButton"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name=".GridView.GridView"
+            android:exported="false" />
+        <activity
+            android:name=".ExpandableListView.ExpandableListView"
+            android:exported="false" />
+        <activity
+            android:name=".TextInputLayout.TextInputLayout"
+            android:exported="false" />
+        <activity
+            android:name=".SurfaceView.SurfaceView"
+            android:exported="false" />
+        <activity
+            android:name=".TextureView.TextureView"
+            android:exported="false" />
+        <activity
+            android:name=".FloatingActionButton.FloatingActionButton"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStub.ViewStub"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSwitcher.ViewSwitcher"
+            android:exported="false" />
+        <activity
+            android:name=".ViewFlipper.ViewFlipper"
+            android:exported="false" />
+        <activity
+            android:name=".AdapterViewFlipper.AdapterViewFlipper"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAnimator.ViewAnimator"
+            android:exported="false" />
+        <activity
+            android:name=".TextSwitcher.TextSwitcher"
+            android:exported="false" />
+        <activity
+            android:name=".ImageSwitcher.ImageSwitcher"
+            android:exported="false" />
+        <activity
+            android:name=".StackView.StackView"
+            android:exported="false" />
+        <activity
+            android:name=".TextClock.TextClock"
+            android:exported="false" />
+        <activity
+            android:name=".ChronoMeter.ChronoMeter"
+            android:exported="false" />
+        <activity
+            android:name=".DatePicker.DatePicker"
+            android:exported="false" />
+        <activity
+            android:name=".TimePicker.TimePicker"
+            android:exported="false" />
+        <activity
+            android:name=".NumberPicker.NumberPicker"
+            android:exported="false" />
+        <activity
+            android:name=".TabHost.ProfileActivity"
+            android:label="@string/profile" />
+        <activity
+            android:name=".TabHost.RecentActivity"
+            android:label="@string/recent" />
+        <activity
+            android:name=".TabHost.HomeActivity"
+            android:label="@string/home" />
+        <activity
+            android:name=".TabHost.TabHost"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPager.ViewPager"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarView.CalendarView"
+            android:exported="false" />
+        <activity
+            android:name=".NestedScrollView.NestedScrollView"
+            android:exported="false" />
+        <activity
+            android:name=".WebView.WebView"
+            android:exported="false" />
+        <activity
+            android:name=".VideoView.VideoView"
+            android:exported="false" />
+        <activity
+            android:name=".ImageView.ImageView"
+            android:exported="false" />
+        <activity
+            android:name=".MultiAutoCompleteTextview.MultiAutoCompleteTextview"
+            android:exported="false" />
+        <activity
+            android:name=".AutoCompleteTextview.AutoCompleteTextview"
+            android:exported="false" />
+        <activity
+            android:name=".Space.Space"
+            android:exported="false" />
+        <activity
+            android:name=".Switch.Switch"
+            android:exported="false" />
+        <activity
+            android:name=".RatingBar.RatingBar"
+            android:exported="false" />
+        <activity
+            android:name=".DiscreteSeekBar.DiscreteSeekBar"
+            android:exported="false" />
+        <activity
+            android:name=".SeekBar.SeekBar"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalProgressBar.HorizontalProgressBar"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressBar.ProgressBar"
+            android:exported="false" />
+        <activity
+            android:name=".Spinner.Spinner"
+            android:exported="false" />
+        <activity
+            android:name=".CheckedTextview.CheckedTextview"
+            android:exported="false" />
+        <activity
+            android:name=".RadioButton.RadioButton"
+            android:exported="false" />
+        <activity
+            android:name=".checkbox.CheckBox"
+            android:exported="false" />
+        <activity
+            android:name=".ToggleButton.ToggleButton"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.EditText"
+            android:exported="false" />
+        <activity
+            android:name=".textview.Textview"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

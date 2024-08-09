@@ -38,7 +38,7 @@ class VideoView : AppCompatActivity() {
             mediaController!!.setAnchorView(this@VideoView.binding.videoView)
         }
         binding.videoView.setMediaController(mediaController)
-        val path = "android.resource://" + packageName + "/" + R.raw.spring_blender_open_movie_804p
+        val path = "android.resource://" + packageName + "/" + R.raw.sample_video
         binding.videoView.setVideoURI(Uri.parse(path))
         binding.videoView.requestFocus()
 

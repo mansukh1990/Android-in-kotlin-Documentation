@@ -195,5 +195,10 @@
     <string name="textview_4">[TextView 4]</string>
     <string name="textview_5">[TextView 5]</string>
 
+    <string name="saturation">Saturation:</string>
+    <string name="warmth">Warmth:</string>
+    <string name="contrast">Contrast:</string>
+    <string name="crossFade">CrossFade</string>
+
 
 </resources>

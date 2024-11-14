@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/holo_blue_light"
-    tools:context=".TabLayoutWithViewPager2.SecondaFragment">
+    tools:context=".AndroidWithKotlin.TabLayoutWithViewPager2.SecondaFragment">
 
 
     <TextView

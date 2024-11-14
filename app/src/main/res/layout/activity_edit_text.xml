@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".edittext.EditText">
+    tools:context=".AndroidWithKotlin.edittext.EditText">
 
 </LinearLayout>

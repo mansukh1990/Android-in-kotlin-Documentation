@@ -1,0 +1,106 @@
+package com.example.androidwithkotlin.AndroidWithKotlin.ExpandableListView
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.BaseExpandableListAdapter
+import android.widget.TextView
+import com.example.androidwithkotlin.databinding.ListGroupExpandableListViewBinding
+import com.example.androidwithkotlin.databinding.ListItemExpandableListViewBinding
+
+class CustomExpandableListAdapter internal constructor(
+    private val context: Context,
+    private val titleList: List<String>,
+    private val dataList: HashMap<String, List<String>>
+) : BaseExpandableListAdapter() {
+
+    private val inflater: LayoutInflater = LayoutInflater.from(context)
+    private lateinit var groupBinding: ListGroupExpandableListViewBinding
+    private lateinit var itemBinding: ListItemExpandableListViewBinding
+
+    override fun getChild(listPosition: Int, expandedListPosition: Int): Any {
+        return this.dataList[this.titleList[listPosition]]!![expandedListPosition]
+    }
+
+    override fun getChildId(listPosition: Int, expandedListPosition: Int): Long {
+        return expandedListPosition.toLong()
+    }
+
+    override fun getChildView(
+        listPosition: Int,
+        expandedListPosition: Int,
+        isLastChild: Boolean,
+        view: View?,
+        parent: ViewGroup
+    ): View {
+        var convertView = view
+        val holder: com.example.androidwithkotlin.AndroidWithKotlin.ExpandableListView.CustomExpandableListAdapter.ItemViewHolder
+        if (convertView == null) {
+            itemBinding = ListItemExpandableListViewBinding.inflate(inflater)
+            convertView = itemBinding.root
+            holder = ItemViewHolder()
+            holder.label = itemBinding.expandedListItem
+            convertView.tag = holder
+        } else {
+            holder = convertView.tag as com.example.androidwithkotlin.AndroidWithKotlin.ExpandableListView.CustomExpandableListAdapter.ItemViewHolder
+        }
+        val expandedListText = getChild(listPosition, expandedListPosition) as String
+        holder.label!!.text = expandedListText
+        return convertView
+    }
+
+    override fun getChildrenCount(listPosition: Int): Int {
+        return this.dataList[this.titleList[listPosition]]!!.size
+    }
+
+    override fun getGroup(listPosition: Int): Any {
+        return this.titleList[listPosition]
+    }
+
+    override fun getGroupCount(): Int {
+        return this.titleList.size
+    }
+
+    override fun getGroupId(listPosition: Int): Long {
+        return listPosition.toLong()
+    }
+
+    override fun getGroupView(
+        listPosition: Int,
+        isExpanded: Boolean,
+        view: View?,
+        parent: ViewGroup
+    ): View {
+        var convertView = view
+        val holder: com.example.androidwithkotlin.AndroidWithKotlin.ExpandableListView.CustomExpandableListAdapter.GroupViewHolder
+        if (convertView == null) {
+            groupBinding = ListGroupExpandableListViewBinding.inflate(inflater)
+            convertView = groupBinding.root
+            holder = GroupViewHolder()
+            holder.label = groupBinding.listTitle
+            convertView.tag = holder
+        } else {
+            holder = convertView.tag as com.example.androidwithkotlin.AndroidWithKotlin.ExpandableListView.CustomExpandableListAdapter.GroupViewHolder
+        }
+        val listTitle = getGroup(listPosition) as String
+        holder.label!!.text = listTitle
+        return convertView
+    }
+
+    override fun hasStableIds(): Boolean {
+        return false
+    }
+
+    override fun isChildSelectable(listPosition: Int, expandedListPosition: Int): Boolean {
+        return true
+    }
+
+    inner class ItemViewHolder {
+        internal var label: TextView? = null
+    }
+
+    inner class GroupViewHolder {
+        internal var label: TextView? = null
+    }
+}

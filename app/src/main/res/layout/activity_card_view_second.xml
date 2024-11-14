@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0f0f0"
-    tools:context=".CardView.CardViewSecond">
+    tools:context=".AndroidWithKotlin.CardView.CardViewSecond">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
-            tools:context=".CardView.CardViewSecond">
+            tools:context=".AndroidWithKotlin.CardView.CardViewSecond">
 
             <ImageView
                 android:id="@+id/image"

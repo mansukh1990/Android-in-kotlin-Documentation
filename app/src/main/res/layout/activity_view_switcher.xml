@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ViewSwitcher.ViewSwitcher">
+    tools:context=".AndroidWithKotlin.ViewSwitcher.ViewSwitcher">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNext"

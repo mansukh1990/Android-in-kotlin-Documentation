@@ -20,121 +20,115 @@
         android:theme="@style/Theme.AndroidWithKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".MockView.MockView"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ImageFilterButton.ImageFilterButton"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ImageFilterView.ImageFilterView"
+            android:name=".AndroidWithKotlin.MockView.MockView"
             android:exported="false" />
         <activity
-            android:name=".Layer.Layer"
-            android:exported="false"></activity>
+            android:name=".AndroidWithKotlin.ImageFilterButton.ImageFilterButton"
+            android:exported="false" />
         <activity
-            android:name=".Flow.Flow"
+            android:name=".AndroidWithKotlin.ImageFilterView.ImageFilterView"
+            android:exported="false" />
+        <activity
+            android:name=".AndroidWithKotlin.Layer.Layer"
+            android:exported="false" />
+        <activity
+            android:name=".AndroidWithKotlin.Flow.Flow"
             android:exported="false" />
         <activity
             android:name=".Guideline.Guideline"
             android:exported="false" />
         <activity
-            android:name=".Barrier.Barrier"
+            android:name=".AndroidWithKotlin.Barrier.Barrier"
             android:exported="false" />
         <activity
-            android:name=".Group.Group"
+            android:name=".AndroidWithKotlin.Group.Group"
             android:exported="false" />
         <activity
-            android:name=".BottomNavigationView.BottomNavigationView"
+            android:name=".AndroidWithKotlin.BottomNavigationView.BottomNavigationView"
             android:exported="false" />
         <activity
-            android:name=".NavigationView.NavigationView"
+            android:name=".AndroidWithKotlin.NavigationView.NavigationView"
             android:exported="false" />
         <activity
-            android:name=".BottomAppBar.BottomAppBar"
+            android:name=".AndroidWithKotlin.BottomAppBar.BottomAppBar"
             android:exported="false" />
         <activity
-            android:name=".TabLayoutWithAppBarLayoutWithViewPager.TabLayoutWithAppBarLayoutWithViewPager"
+            android:name=".AndroidWithKotlin.TabLayoutWithAppBarLayoutWithViewPager.TabLayoutWithAppBarLayoutWithViewPager"
             android:exported="false" />
         <activity
-            android:name=".TabLayoutWithViewPager2.TabLayoutWithViewPager2"
+            android:name=".AndroidWithKotlin.TabLayoutWithViewPager2.TabLayoutWithViewPager2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AndroidWithKotlin.AppBarLayoutWithViewPager.AppBarLayoutWithViewPager"
             android:exported="false" />
         <activity
-            android:name=".AppBarLayoutWithViewPager.AppBarLayoutWithViewPager"
+            android:name=".TAndroidWithKotlin.abLayoutWithViewPager.TabLayoutWithViewPager"
             android:exported="false" />
         <activity
-            android:name=".TabLayoutWithViewPager.TabLayoutWithViewPager"
+            android:name=".AndroidWithKotlin.TabLayout.TabLayout"
             android:exported="false" />
         <activity
-            android:name=".TabLayout.TabLayout"
+            android:name=".AndroidWithKotlin.Toolbar.Toolbar"
             android:exported="false" />
         <activity
-            android:name=".Toolbar.Toolbar"
+            android:name=".AndroidWithKotlin.AppBarLayout.AppBarLayout"
             android:exported="false" />
         <activity
-            android:name=".AppBarLayout.AppBarLayout"
+            android:name=".AndroidWithKotlin.CardView.CardViewSecond"
             android:exported="false" />
         <activity
-            android:name=".CardView.CardViewSecond"
+            android:name=".AndroidWithKotlin.CardView.CardView"
             android:exported="false" />
         <activity
-            android:name=".CardView.CardView"
+            android:name=".AndroidWithKotlin.RecyclerView.RecyclerViewStaggeredGridLayout.RecyclerViewStaggeredGridLayout"
             android:exported="false" />
         <activity
-            android:name=".RecyclerView.RecyclerViewStaggeredGridLayout.RecyclerViewStaggeredGridLayout"
+            android:name=".AndroidWithKotlin.RecyclerView.RecyclerViewGridLayout.RecyclerViewGridLayout"
             android:exported="false" />
         <activity
-            android:name=".RecyclerView.RecyclerViewGridLayout.RecyclerViewGridLayout"
+            android:name=".AndroidWithKotlin.RecyclerView.RecyclerViewHorizontal.RecyclerViewHorizontal"
             android:exported="false" />
         <activity
-            android:name=".RecyclerView.RecyclerViewHorizontal.RecyclerViewHorizontal"
+            android:name=".AndroidWithKotlin.RecyclerView.Recyclerview.RecyclerView"
             android:exported="false" />
         <activity
-            android:name=".RecyclerView.Recyclerview.RecyclerView"
+            android:name=".AndroidWithKotlin.HorizontalDivider.HorizontalDivider"
             android:exported="false" />
         <activity
-            android:name=".HorizontalDivider.HorizontalDivider"
+            android:name=".AndroidWithKotlin.SearchView.SearchView"
             android:exported="false" />
         <activity
-            android:name=".SearchView.SearchView"
+            android:name=".AndroidWithKotlin.Chip.ChipAction.ChipAction"
             android:exported="false" />
         <activity
-            android:name=".Chip.ChipAction.ChipAction"
+            android:name=".AndroidWithKotlin.Chip.ChipChoice.ChipChoice"
             android:exported="false" />
         <activity
-            android:name=".Chip.ChipChoice.ChipChoice"
+            android:name=".AndroidWithKotlin.Chip.ChipFilter.ChipFilter"
             android:exported="false" />
         <activity
-            android:name=".Chip.ChipFilter.ChipFilter"
+            android:name=".AndroidWithKotlin.Chip.ChipGroup.ChipGroup"
             android:exported="false" />
         <activity
-            android:name=".Chip.ChipGroup.ChipGroup"
+            android:name=".AndroidWithKotlin.Chip.ChipWithHorizontalScrollView.ChipWithHorizontalScrollView"
             android:exported="false" />
         <activity
-            android:name=".Chip.ChipWithHorizontalScrollView.ChipWithHorizontalScrollView"
+            android:name=".AndroidWithKotlin.Chip.ChipInput.ChipInput"
             android:exported="false" />
         <activity
-            android:name=".Chip.ChipInput.ChipInput"
+            android:name=".AndroidWithKotlin.ViewPager2.ViewPagerWithFragment.ViewPagerWithFragment"
             android:exported="false" />
         <activity
-            android:name=".ViewPager2.ViewPagerWithFragment.ViewPagerWithFragment"
+            android:name=".AndroidWithKotlin.ViewPager2.ViewPagerTwo"
             android:exported="false" />
         <activity
-            android:name=".ViewPager2.ViewPagerTwo"
-            android:exported="false" />
-        <activity
-            android:name=".ExtendedFloatingActionButton.ExtendedFloatingActionButton"
+            android:name=".AndroidWithKotlin.ExtendedFloatingActionButton.ExtendedFloatingActionButton"
             android:exported="false" />
 
         <meta-data
@@ -142,143 +136,144 @@
             android:value="true" />
 
         <activity
-            android:name=".GridView.GridView"
+            android:name=".AndroidWithKotlin.GridView.GridView"
             android:exported="false" />
         <activity
-            android:name=".ExpandableListView.ExpandableListView"
+            android:name=".AndroidWithKotlin.ExpandableListView.ExpandableListView"
             android:exported="false" />
         <activity
-            android:name=".TextInputLayout.TextInputLayout"
+            android:name=".AndroidWithKotlin.TextInputLayout.TextInputLayout"
             android:exported="false" />
         <activity
-            android:name=".SurfaceView.SurfaceView"
+            android:name=".AndroidWithKotlin.SurfaceView.SurfaceView"
             android:exported="false" />
         <activity
-            android:name=".TextureView.TextureView"
+            android:name=".AndroidWithKotlin.TextureView.TextureView"
             android:exported="false" />
         <activity
-            android:name=".FloatingActionButton.FloatingActionButton"
+            android:name=".AndroidWithKotlin.FloatingActionButton.FloatingActionButton"
             android:exported="false" />
         <activity
-            android:name=".ViewStub.ViewStub"
+            android:name=".AndroidWithKotlin.ViewStub.ViewStub"
             android:exported="false" />
         <activity
-            android:name=".ViewSwitcher.ViewSwitcher"
+            android:name=".AndroidWithKotlin.ViewSwitcher.ViewSwitcher"
             android:exported="false" />
         <activity
-            android:name=".ViewFlipper.ViewFlipper"
+            android:name=".AndroidWithKotlin.ViewFlipper.ViewFlipper"
             android:exported="false" />
         <activity
-            android:name=".AdapterViewFlipper.AdapterViewFlipper"
+            android:name=".AndroidWithKotlin.AdapterViewFlipper.AdapterViewFlipper"
             android:exported="false" />
         <activity
-            android:name=".ViewAnimator.ViewAnimator"
+            android:name=".AndroidWithKotlin.ViewAnimator.ViewAnimator"
             android:exported="false" />
         <activity
-            android:name=".TextSwitcher.TextSwitcher"
+            android:name=".AndroidWithKotlin.TextSwitcher.TextSwitcher"
             android:exported="false" />
         <activity
-            android:name=".ImageSwitcher.ImageSwitcher"
+            android:name=".AndroidWithKotlin.ImageSwitcher.ImageSwitcher"
             android:exported="false" />
         <activity
-            android:name=".StackView.StackView"
+            android:name=".AndroidWithKotlin.StackView.StackView"
             android:exported="false" />
         <activity
-            android:name=".TextClock.TextClock"
+            android:name=".AndroidWithKotlin.TextClock.TextClock"
             android:exported="false" />
         <activity
-            android:name=".ChronoMeter.ChronoMeter"
+            android:name=".AndroidWithKotlin.ChronoMeter.ChronoMeter"
             android:exported="false" />
         <activity
-            android:name=".DatePicker.DatePicker"
+            android:name=".AndroidWithKotlin.DatePicker.DatePicker"
             android:exported="false" />
         <activity
-            android:name=".TimePicker.TimePicker"
+            android:name=".AndroidWithKotlin.TimePicker.TimePicker"
             android:exported="false" />
         <activity
-            android:name=".NumberPicker.NumberPicker"
+            android:name=".AndroidWithKotlin.NumberPicker.NumberPicker"
             android:exported="false" />
         <activity
-            android:name=".TabHost.ProfileActivity"
+            android:name=".AndroidWithKotlin.TabHost.ProfileActivity"
             android:label="@string/profile" />
         <activity
-            android:name=".TabHost.RecentActivity"
+            android:name=".AndroidWithKotlin.TabHost.RecentActivity"
             android:label="@string/recent" />
         <activity
-            android:name=".TabHost.HomeActivity"
+            android:name=".AndroidWithKotlin.TabHost.HomeActivity"
             android:label="@string/home" />
         <activity
-            android:name=".TabHost.TabHost"
+            android:name=".AndroidWithKotlin.TabHost.TabHost"
             android:exported="false" />
         <activity
-            android:name=".ViewPager.ViewPager"
+            android:name=".AndroidWithKotlin.ViewPager.ViewPager"
             android:exported="false" />
         <activity
-            android:name=".CalendarView.CalendarView"
+            android:name=".AndroidWithKotlin.CalendarView.CalendarView"
             android:exported="false" />
         <activity
-            android:name=".NestedScrollView.NestedScrollView"
+            android:name=".AndroidWithKotlin.NestedScrollView.NestedScrollView"
             android:exported="false" />
         <activity
-            android:name=".WebView.WebView"
+            android:name=".AndroidWithKotlin.WebView.WebView"
             android:exported="false" />
         <activity
-            android:name=".VideoView.VideoView"
+            android:name=".AndroidWithKotlin.VideoView.VideoView"
             android:exported="false" />
         <activity
-            android:name=".ImageView.ImageView"
+            android:name=".AndroidWithKotlin.ImageView.ImageView"
             android:exported="false" />
         <activity
-            android:name=".MultiAutoCompleteTextview.MultiAutoCompleteTextview"
+            android:name=".AndroidWithKotlin.MultiAutoCompleteTextview.MultiAutoCompleteTextview"
             android:exported="false" />
         <activity
-            android:name=".AutoCompleteTextview.AutoCompleteTextview"
+            android:name=".AndroidWithKotlin.AutoCompleteTextview.AutoCompleteTextview"
             android:exported="false" />
         <activity
-            android:name=".Space.Space"
+            android:name=".AndroidWithKotlin.Space.Space"
             android:exported="false" />
         <activity
-            android:name=".Switch.Switch"
+            android:name=".AndroidWithKotlin.Switch.Switch"
             android:exported="false" />
         <activity
-            android:name=".RatingBar.RatingBar"
+            android:name=".AndroidWithKotlin.RatingBar.RatingBar"
             android:exported="false" />
         <activity
-            android:name=".DiscreteSeekBar.DiscreteSeekBar"
+            android:name=".AndroidWithKotlin.DiscreteSeekBar.DiscreteSeekBar"
             android:exported="false" />
         <activity
-            android:name=".SeekBar.SeekBar"
+            android:name=".AndroidWithKotlin.SeekBar.SeekBar"
             android:exported="false" />
         <activity
-            android:name=".HorizontalProgressBar.HorizontalProgressBar"
+            android:name=".AndroidWithKotlin.HorizontalProgressBar.HorizontalProgressBar"
             android:exported="false" />
         <activity
-            android:name=".ProgressBar.ProgressBar"
+            android:name=".AndroidWithKotlin.ProgressBar.ProgressBar"
             android:exported="false" />
         <activity
-            android:name=".Spinner.Spinner"
+            android:name=".AndroidWithKotlin.Spinner.Spinner"
             android:exported="false" />
         <activity
-            android:name=".CheckedTextview.CheckedTextview"
+            android:name=".AndroidWithKotlin.CheckedTextview.CheckedTextview"
             android:exported="false" />
         <activity
-            android:name=".RadioButton.RadioButton"
+            android:name=".AndroidWithKotlin.RadioButton.RadioButton"
             android:exported="false" />
         <activity
-            android:name=".checkbox.CheckBox"
+            android:name=".AndroidWithKotlin.checkbox.CheckBox"
             android:exported="false" />
         <activity
-            android:name=".ToggleButton.ToggleButton"
+            android:name=".AndroidWithKotlin.ToggleButton.ToggleButton"
             android:exported="false" />
         <activity
-            android:name=".edittext.EditText"
+            android:name=".AndroidWithKotlin.edittext.EditText"
             android:exported="false" />
         <activity
-            android:name=".textview.Textview"
+            android:name=".AndroidWithKotlin.textview.Textview"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>

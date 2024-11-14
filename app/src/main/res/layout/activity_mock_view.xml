@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".MockView.MockView">
+    tools:context=".AndroidWithKotlin.MockView.MockView">
     
     <androidx.constraintlayout.utils.widget.MockView
         android:id="@+id/mockView"

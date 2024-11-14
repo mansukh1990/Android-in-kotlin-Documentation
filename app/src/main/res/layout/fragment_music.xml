@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/holo_red_light"
-    tools:context=".TabLayoutWithAppBarLayoutWithViewPager.MusicFragment">
+    tools:context=".AndroidWithKotlin.TabLayoutWithAppBarLayoutWithViewPager.MusicFragment">
 
     <ImageView
         android:id="@+id/imageView"

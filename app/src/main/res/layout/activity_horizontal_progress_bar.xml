@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HorizontalProgressBar.HorizontalProgressBar">
+    tools:context=".AndroidWithKotlin.HorizontalProgressBar.HorizontalProgressBar">
 
     <ProgressBar
         android:id="@+id/progressbar_id"

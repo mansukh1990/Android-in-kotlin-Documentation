@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.androidwithkotlin"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.androidwithkotlin"
@@ -54,5 +54,12 @@ dependencies {
 
     implementation ("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation ("androidx.navigation:navigation-ui-ktx:2.3.5")
+
+    implementation("androidx.media3:media3-exoplayer:1.5.1")
+    implementation("androidx.media3:media3-exoplayer-dash:1.5.1")
+    implementation("androidx.media3:media3-ui:1.5.1")
+
+    implementation ("com.intuit.ssp:ssp-android:1.1.1")
+    implementation ("com.intuit.sdp:sdp-android:1.1.1")
 
 }

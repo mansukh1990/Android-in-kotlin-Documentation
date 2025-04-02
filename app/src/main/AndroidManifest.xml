@@ -20,6 +20,15 @@
         android:theme="@style/Theme.AndroidWithKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".TimelineActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".AndroidWithKotlin.MockView.MockView"
             android:exported="false" />
         <activity
@@ -57,13 +66,7 @@
             android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.TabLayoutWithViewPager2.TabLayoutWithViewPager2"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.AppBarLayoutWithViewPager.AppBarLayoutWithViewPager"
             android:exported="false" />
@@ -218,7 +221,7 @@
             android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.VideoView.VideoView"
-            android:exported="false" />
+            android:exported="false"></activity>
         <activity
             android:name=".AndroidWithKotlin.ImageView.ImageView"
             android:exported="false" />
@@ -273,7 +276,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>

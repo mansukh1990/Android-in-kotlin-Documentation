@@ -27,7 +27,7 @@ class CustomAdapter(
         }
     }
 
-    class ViewHolder(val listItemRecyclerviewBinding: ListItemRecyclerviewBinding) :
+    class ViewHolder(private val listItemRecyclerviewBinding: ListItemRecyclerviewBinding) :
         RecyclerView.ViewHolder(listItemRecyclerviewBinding.root) {
         fun bindItem(animal: Animal) {
             listItemRecyclerviewBinding.image.setImageResource(animal.image)

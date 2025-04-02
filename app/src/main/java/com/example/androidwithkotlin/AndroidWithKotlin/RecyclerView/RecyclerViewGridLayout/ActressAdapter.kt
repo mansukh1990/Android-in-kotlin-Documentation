@@ -10,7 +10,7 @@ class ActressAdapter(
     private val listener: (Actress, Int) -> Unit
 ) : RecyclerView.Adapter<ActressAdapter.ViewHolder>() {
 
-    class ViewHolder(var itemBinding: ItemHorizontalRecyclerViewBinding) :
+    class ViewHolder(private var itemBinding: ItemHorizontalRecyclerViewBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bindItem(actress: Actress) {
             itemBinding.name.text = actress.name

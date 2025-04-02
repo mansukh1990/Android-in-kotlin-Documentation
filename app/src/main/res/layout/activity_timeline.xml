@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_lr_bg"
+    tools:context=".TimelineActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_14ssp"
+        android:background="@drawable/cl_background"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_lead_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/cl_timeline"
+            app:layout_constraintStart_toStartOf="@id/cl_timeline"
+            app:layout_constraintTop_toTopOf="@id/cl_timeline">
+
+            <TextView
+                android:id="@+id/txt_lead_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Lead Code:  36138223"
+                android:textColor="#0F5D98"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_lead_code"
+                app:layout_constraintStart_toStartOf="@id/cl_lead_code"
+                app:layout_constraintTop_toTopOf="@id/cl_lead_code" />
+
+            <TextView
+                android:id="@+id/txt_vehicle_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Vehicle No.: MH43GC5353"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_lead_code"
+                app:layout_constraintStart_toStartOf="@id/cl_lead_code"
+                app:layout_constraintTop_toBottomOf="@id/txt_lead_code" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_pick_up_and_reach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/cl_timeline"
+            app:layout_constraintStart_toStartOf="@id/cl_timeline"
+            app:layout_constraintTop_toBottomOf="@id/cl_lead_code">
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/bg_pick_up_timeline"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintTop_toTopOf="@id/cl_pick_up_and_reach" />
+
+            <TextView
+                android:id="@+id/txt_pick_up_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/bg_pick_up"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Pickup 1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/tvNumber"
+                app:layout_constraintStart_toEndOf="@id/tvNumber"
+                app:layout_constraintTop_toTopOf="@id/tvNumber" />
+
+            <TextView
+                android:id="@+id/txt_reached_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/bg_reached"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Reached"
+                android:textColor="#22C55E"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_pick_up_no"
+                app:layout_constraintStart_toEndOf="@id/txt_pick_up_no"
+                app:layout_constraintTop_toTopOf="@id/txt_pick_up_no" />
+
+            <View
+                android:id="@+id/view_doted"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_doted_verticle_line"
+                app:layout_constraintStart_toStartOf="@id/tvNumber"
+                app:layout_constraintTop_toBottomOf="@id/tvNumber"
+                app:layout_constraintBottom_toTopOf="@+id/txt_drop_no"
+                app:layout_constraintEnd_toEndOf="@id/tvNumber"/>
+
+            <ImageView
+                android:id="@+id/img_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_pick_up_no"
+                app:layout_constraintTop_toBottomOf="@id/txt_pick_up_no"
+                app:srcCompat="@drawable/ic_calendar_timeline" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="30/06/2014"
+                android:textColor="#0F5D98"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/img_calendar"
+                app:layout_constraintStart_toEndOf="@id/img_calendar"
+                app:layout_constraintTop_toTopOf="@id/img_calendar" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="10:31 AM"
+                android:textColor="#0F5D98"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_date"
+                app:layout_constraintStart_toEndOf="@id/txt_date"
+                app:layout_constraintTop_toTopOf="@id/txt_date" />
+
+            <TextView
+                android:id="@+id/txt_address_line_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Mahu, Madhya Pradesh, India"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_pick_up_no"
+                app:layout_constraintTop_toBottomOf="@id/img_calendar" />
+
+            <TextView
+                android:id="@+id/txt_address_line_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Dewas Gate Bus Stand, Malipura, UJJAIN, MADHYA PRADESH"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_address_line_1"
+                app:layout_constraintTop_toBottomOf="@id/txt_address_line_1" />
+
+            <TextView
+                android:id="@+id/txt_temperature_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Goods Temperature"
+                android:textColor="#3F3F46"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_address_line_2"
+                app:layout_constraintTop_toBottomOf="@id/txt_address_line_2" />
+
+            <TextView
+                android:id="@+id/txt_temperature_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="8OC : 14℃ "
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_temperature_label"
+                app:layout_constraintTop_toBottomOf="@id/txt_temperature_label" />
+
+            <TextView
+                android:id="@+id/txt_start_loading_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Start Loading"
+                android:textColor="#3F3F46"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_temperature_value"
+                app:layout_constraintTop_toBottomOf="@id/txt_temperature_value" />
+
+            <TextView
+                android:id="@+id/txt_start_loading_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="24/11/2024 3:10 PM"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_start_loading_label"
+                app:layout_constraintTop_toBottomOf="@id/txt_start_loading_label" />
+
+            <TextView
+                android:id="@+id/txt_complete_loading_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Complete Loading"
+                android:textColor="#3F3F46"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_start_loading_value"
+                app:layout_constraintTop_toBottomOf="@id/txt_start_loading_value" />
+
+            <TextView
+                android:id="@+id/txt_start_complete_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="24/11/2024 3:10 PM"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_complete_loading_label"
+                app:layout_constraintTop_toBottomOf="@id/txt_complete_loading_label" />
+
+            <TextView
+                android:id="@+id/txt_drop_no"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/bg_drop_timeline"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:layout_constraintStart_toStartOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintTop_toTopOf="@id/txt_start_complete_value" />
+
+            <TextView
+                android:id="@+id/txt_drop_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/bg_drop"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Drop 1"
+                android:textColor="#EF4444"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_drop_no"
+                app:layout_constraintStart_toEndOf="@id/txt_drop_no"
+                app:layout_constraintTop_toTopOf="@id/txt_drop_no" />
+
+            <TextView
+                android:id="@+id/txt_reached_no_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/bg_reached"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Reached"
+                android:textColor="#22C55E"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_drop_1"
+                app:layout_constraintStart_toEndOf="@id/txt_drop_1"
+                app:layout_constraintTop_toTopOf="@id/txt_drop_1" />
+
+            <View
+                android:id="@+id/view_doted_a"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_doted_verticle_line"
+                app:layout_constraintBottom_toTopOf="@+id/txt_drop_no_2"
+                app:layout_constraintEnd_toEndOf="@id/txt_drop_no"
+                app:layout_constraintStart_toStartOf="@id/txt_drop_no"
+                app:layout_constraintTop_toBottomOf="@id/txt_drop_no" />
+
+            <ImageView
+                android:id="@+id/img_calendar_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_drop_1"
+                app:layout_constraintTop_toBottomOf="@id/txt_drop_1"
+                app:srcCompat="@drawable/ic_calendar_timeline" />
+
+            <TextView
+                android:id="@+id/txt_date_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="30/06/2014"
+                android:textColor="#0F5D98"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/img_calendar_drop"
+                app:layout_constraintStart_toEndOf="@id/img_calendar_drop"
+                app:layout_constraintTop_toTopOf="@id/img_calendar_drop" />
+
+            <TextView
+                android:id="@+id/txt_time_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="10:31 AM"
+                android:textColor="#0F5D98"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_date_drop"
+                app:layout_constraintStart_toEndOf="@id/txt_date_drop"
+                app:layout_constraintTop_toTopOf="@id/txt_date_drop" />
+
+            <TextView
+                android:id="@+id/txt_address_line_1_drop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Mahu, Madhya Pradesh, India"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/img_calendar_drop"
+                app:layout_constraintTop_toBottomOf="@id/img_calendar_drop" />
+
+            <TextView
+                android:id="@+id/txt_address_line_2_drop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Dewas Gate Bus Stand, Malipura, UJJAIN, MADHYA PRADESH"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_address_line_1_drop"
+                app:layout_constraintTop_toBottomOf="@id/txt_address_line_1_drop" />
+
+            <TextView
+                android:id="@+id/txt_reached_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Reached"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_address_line_2_drop"
+                app:layout_constraintTop_toBottomOf="@id/txt_address_line_2_drop" />
+
+            <TextView
+                android:id="@+id/txt_reached_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="24/11/2024 3:10 PM"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_reached_label"
+                app:layout_constraintTop_toBottomOf="@id/txt_reached_label" />
+
+            <TextView
+                android:id="@+id/txt_start_un_loading_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Start Unloading"
+                android:textColor="#3F3F46"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_reached_value"
+                app:layout_constraintTop_toBottomOf="@id/txt_reached_value" />
+
+            <TextView
+                android:id="@+id/txt_start_un_loading_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="24/11/2024 3:10 PM"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_start_un_loading_label"
+                app:layout_constraintTop_toBottomOf="@id/txt_start_un_loading_label" />
+
+            <TextView
+                android:id="@+id/txt_complete_un_loading_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Complete Unloading"
+                android:textColor="#3F3F46"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_start_un_loading_value"
+                app:layout_constraintTop_toBottomOf="@id/txt_start_un_loading_value" />
+
+            <TextView
+                android:id="@+id/txt_complete_un_loading_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="24/11/2024 3:10 PM"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_complete_un_loading_label"
+                app:layout_constraintTop_toBottomOf="@id/txt_complete_un_loading_label" />
+
+            <TextView
+                android:id="@+id/txt_upload_pod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Upload POD"
+                android:textColor="#3F3F46"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_complete_un_loading_value"
+                app:layout_constraintTop_toBottomOf="@id/txt_complete_un_loading_value" />
+
+            <ImageView
+                android:id="@+id/img_upload"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:srcCompat="@drawable/ic_truck_upload"
+                app:layout_constraintTop_toBottomOf="@+id/txt_upload_pod"
+                app:layout_constraintStart_toStartOf="@+id/txt_upload_pod"/>
+
+            <TextView
+                android:id="@+id/txt_drop_no_2"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/bg_drop_timeline"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_upload"
+                app:layout_constraintStart_toStartOf="@id/cl_pick_up_and_reach"/>
+
+            <TextView
+                android:id="@+id/txt_drop_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/bg_drop"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Drop 2"
+                android:textColor="#EF4444"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_drop_no_2"
+                app:layout_constraintStart_toEndOf="@id/txt_drop_no_2"
+                app:layout_constraintTop_toTopOf="@id/txt_drop_no_2" />
+
+            <TextView
+                android:id="@+id/txt_wait_for_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Waiting for Load"
+                android:textColor="#0F5D98"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_drop_2"
+                app:layout_constraintStart_toEndOf="@id/txt_drop_2"
+                app:layout_constraintTop_toTopOf="@id/txt_drop_2" />
+
+            <View
+                android:id="@+id/view_doted_b"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_doted_verticle_line"
+                app:layout_constraintEnd_toEndOf="@id/txt_drop_no"
+                app:layout_constraintStart_toStartOf="@id/txt_drop_no"
+                app:layout_constraintTop_toBottomOf="@id/txt_drop_no" />
+
+
+
+            <TextView
+                android:id="@+id/txt_address_line_1_drop_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Mahu, Madhya Pradesh, India"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_drop_2"
+                app:layout_constraintTop_toBottomOf="@id/txt_drop_2" />
+
+            <TextView
+                android:id="@+id/txt_address_line_2_drop_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Dewas Gate Bus Stand, Malipura, UJJAIN, MADHYA PRADESH"
+                android:textColor="#71717A"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/cl_pick_up_and_reach"
+                app:layout_constraintStart_toStartOf="@id/txt_address_line_1_drop_2"
+                app:layout_constraintTop_toBottomOf="@id/txt_address_line_1_drop_2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

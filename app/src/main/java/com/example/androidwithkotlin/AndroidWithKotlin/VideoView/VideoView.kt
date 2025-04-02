@@ -16,7 +16,7 @@ class VideoView : AppCompatActivity() {
     private lateinit var binding: ActivityVideoViewBinding
 
     var videoView: VideoView? = null
-    var mediaController: MediaController? = null
+    private var mediaController: MediaController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +38,8 @@ class VideoView : AppCompatActivity() {
             mediaController!!.setAnchorView(this@VideoView.binding.videoView)
         }
         binding.videoView.setMediaController(mediaController)
-        val path = "android.resource://" + packageName + "/" + R.raw.sample_video
+        val path =
+            "https://dashcam.fvts.in:16604/3/3?AVType=1&jsession=de62906c16774540b45fb94aae631df4&DevIDNO=240070849265&Channel=3&Stream=1"
         binding.videoView.setVideoURI(Uri.parse(path))
         binding.videoView.requestFocus()
 

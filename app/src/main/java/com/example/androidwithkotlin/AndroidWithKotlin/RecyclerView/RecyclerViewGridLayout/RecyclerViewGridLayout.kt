@@ -63,32 +63,26 @@ class RecyclerViewGridLayout : AppCompatActivity() {
                 "Kriti Sanon",
                 R.drawable.kriti_sanon
             ),
-            Actress("Mishti", R.drawable.mishti),
-            Actress("Mishti", R.drawable.mishti),
-            Actress("Mishti", R.drawable.mishti),
+            Actress(
+                "Mishti",
+                R.drawable.mishti
+            ),
             Actress(
                 "Nicole",
                 R.drawable.nicole
             ),
-            Actress("Priyanka Chopra", R.drawable.priyanka_chopra),
-            Actress("Priyanka Chopra", R.drawable.priyanka_chopra),
-            Actress("Priyanka Chopra", R.drawable.priyanka_chopra),
+            Actress(
+                "Priyanka Chopra",
+                R.drawable.priyanka_chopra
+            ),
             Actress(
                 "Rashami Desai",
                 R.drawable.rashami_desai
             ),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
-            Actress("Tamanna", R.drawable.tamanna),
+            Actress(
+                "Tamanna",
+                R.drawable.tamanna
+            )
         )
 
     }

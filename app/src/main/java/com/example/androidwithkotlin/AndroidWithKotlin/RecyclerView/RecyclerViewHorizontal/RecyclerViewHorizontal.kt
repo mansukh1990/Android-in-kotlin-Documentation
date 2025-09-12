@@ -36,24 +36,30 @@ class RecyclerViewHorizontal : AppCompatActivity() {
 
     private fun createHeroList(): ArrayList<Hero> {
         return arrayListOf<Hero>(
-            Hero("Ajay Devgan", R.drawable.ajay),
-            Hero("Chris Hemsworth", R.drawable.chris_hemsworth),
-            Hero("Daniel Craig", R.drawable.daniel_craig),
-            Hero("Dwayne Johnson", R.drawable.dwayne_johnson),
-            Hero("Tom Hiddlestone", R.drawable.tom_hiddleston),
-            Hero("Tony Stark", R.drawable.tony_stark),
-            Hero("Ajay Devgan", R.drawable.ajay),
-            Hero("Chris Hemsworth", R.drawable.chris_hemsworth),
-            Hero("Daniel Craig", R.drawable.daniel_craig),
-            Hero("Dwayne Johnson", R.drawable.dwayne_johnson),
-            Hero("Tom Hiddlestone", R.drawable.tom_hiddleston),
-            Hero("Tony Stark", R.drawable.tony_stark),
-            Hero("Ajay Devgan", R.drawable.ajay),
-            Hero("Chris Hemsworth", R.drawable.chris_hemsworth),
-            Hero("Daniel Craig", R.drawable.daniel_craig),
-            Hero("Dwayne Johnson", R.drawable.dwayne_johnson),
-            Hero("Tom Hiddlestone", R.drawable.tom_hiddleston),
-            Hero("Tony Stark", R.drawable.tony_stark)
+            Hero(
+                "Ajay Devgan",
+                R.drawable.ajay
+            ),
+            Hero(
+                "Chris Hemsworth",
+                R.drawable.chris_hemsworth
+            ),
+            Hero(
+                "Daniel Craig",
+                R.drawable.daniel_craig
+            ),
+            Hero(
+                "Dwayne Johnson",
+                R.drawable.dwayne_johnson
+            ),
+            Hero(
+                "Tom Hiddlestone",
+                R.drawable.tom_hiddleston
+            ),
+            Hero(
+                "Tony Stark",
+                R.drawable.tony_stark
+            )
         )
 
     }

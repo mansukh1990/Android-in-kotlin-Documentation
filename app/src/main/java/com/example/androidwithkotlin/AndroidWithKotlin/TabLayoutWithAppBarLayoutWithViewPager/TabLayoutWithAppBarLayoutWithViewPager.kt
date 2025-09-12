@@ -38,7 +38,7 @@ class TabLayoutWithAppBarLayoutWithViewPager : AppCompatActivity() {
         if (viewPager.currentItem == 0) {
             super.onBackPressed()
         } else {
-            viewPager.currentItem -= 1
+            viewPager.currentItem = viewPager.currentItem - 1
         }
 
     }

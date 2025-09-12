@@ -17,7 +17,7 @@ class DiscreteSeekBar : AppCompatActivity() {
 
         setupDecreteSeekBar()
 
-        binding.textView.text = "Progress : ${binding.discreteSeekBar.progress}"
+        binding.textView.text = "Pogress : ${binding.discreteSeekBar.progress}"
     }
 
     private fun setupDecreteSeekBar() {

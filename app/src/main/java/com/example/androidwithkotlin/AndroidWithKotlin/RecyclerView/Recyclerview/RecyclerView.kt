@@ -42,7 +42,7 @@ class RecyclerView : AppCompatActivity() {
     }
 
     private fun createAnimalList(): ArrayList<Animal> {
-        return arrayListOf(
+        return arrayListOf<Animal>(
             Animal(
                 "Antilope",
                 R.drawable.antilope,

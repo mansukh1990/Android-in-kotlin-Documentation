@@ -17,11 +17,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:enableOnBackInvokedCallback="true"
         android:theme="@style/Theme.AndroidWithKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".AndroidWithKotlin.NavBottomDialog.NavBottomDialogActivity"
+            android:name=".TimelineActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,9 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TimelineActivity"
-            android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.MockView.MockView"
             android:exported="false" />
@@ -100,7 +96,7 @@
             android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.RecyclerView.RecyclerViewHorizontal.RecyclerViewHorizontal"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.RecyclerView.Recyclerview.RecyclerView"
             android:exported="false" />
@@ -219,13 +215,13 @@
             android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.NestedScrollView.NestedScrollView"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.WebView.WebView"
             android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.VideoView.VideoView"
-            android:exported="false" />
+            android:exported="false"></activity>
         <activity
             android:name=".AndroidWithKotlin.ImageView.ImageView"
             android:exported="false" />

@@ -25,7 +25,7 @@ class AppBarLayoutWithViewPager : AppCompatActivity() {
 
     private fun setupViewPager() {
         binding.viewPager.apply {
-            adapter = ViewPagerAdapter(supportFragmentManager, binding.tabLayout.tabCount)
+            adapter = ViewsPagerAdapter(supportFragmentManager, binding.tabLayout.tabCount)
         }
     }
 
@@ -34,6 +34,7 @@ class AppBarLayoutWithViewPager : AppCompatActivity() {
             addTab(this.newTab().setText(getString(R.string.gallery)))
             addTab(this.newTab().setText(getString(R.string.audio_playlist)))
             addTab(this.newTab().setText(getString(R.string.video_playlist)))
+            addTab(this.newTab().setText("Video view"))
         }
     }
 }

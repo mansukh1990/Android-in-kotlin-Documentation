@@ -15,7 +15,7 @@ class VideoFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentVideoBinding.inflate(layoutInflater)
         return binding.root
     }

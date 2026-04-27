@@ -23,7 +23,7 @@ class TimePicker : AppCompatActivity() {
         binding.timePicker.setOnTimeChangedListener { _, hourOfDay, minute ->
             val dayHour = when {
                 hourOfDay == 0 -> {
-                    hourOfDay + 12
+                    0 + 12
                 }
 
                 hourOfDay > 12 -> {

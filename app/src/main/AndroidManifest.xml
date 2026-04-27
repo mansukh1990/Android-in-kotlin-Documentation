@@ -20,7 +20,7 @@
         android:theme="@style/Theme.AndroidWithKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".TimelineActivity"
+            android:name=".AndroidWithKotlin.NavBottomDialog.NavBottomDialogActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TimelineActivity"
+            android:exported="false" />
         <activity
             android:name=".AndroidWithKotlin.MockView.MockView"
             android:exported="false" />

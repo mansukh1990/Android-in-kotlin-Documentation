@@ -9,18 +9,19 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
         style="@style/Theme.Toolbar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="Android Toolbar"
-        app:subtitle="Android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:logo="@drawable/ic_person"
         app:navigationIcon="@drawable/ic_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:subtitle="Android"
+        app:title="Android Toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

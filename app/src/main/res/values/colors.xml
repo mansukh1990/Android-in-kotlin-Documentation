@@ -14,4 +14,5 @@
     <color name="colorPrimary">#51A8FF</color>
     <color name="text_color">#0F5D98</color>
     <color name="color_rejected">#ffd7d9</color>
+    <color name="lavender">#8692F7</color>
 </resources>

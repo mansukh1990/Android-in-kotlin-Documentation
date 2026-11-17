@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".AndroidWithKotlin.NavBottomDialog.NavBottomDialogActivity"
-    tools:openDrawer="start">
+    tools:openDrawer="start"
+    tools:ignore="BottomAppBarRecommendation">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +41,8 @@
                 android:layout_gravity="bottom"
                 android:background="@color/white"
                 app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="50dp">
+                app:fabCradleRoundedCornerRadius="50dp"
+                tools:ignore="BottomAppBarRecommendation">
 
                 <com.google.android.material.bottomnavigation.BottomNavigationView
                     android:id="@+id/bottomNavigationViewDialog"
@@ -61,7 +63,8 @@
                 android:src="@drawable/baseline_add_24"
                 app:layout_anchor="@id/bottomAppBar"
                 app:maxImageSize="40dp"
-                app:tint="@color/lavender" />
+                app:tint="@color/lavender"
+                tools:ignore="ContentDescription" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

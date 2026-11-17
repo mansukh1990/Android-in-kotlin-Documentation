@@ -11,6 +11,7 @@ import android.view.Window
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,6 @@ import com.example.androidwithkotlin.R
 import com.example.androidwithkotlin.databinding.ActivityNavBottomDialogBinding
 
 
-@Suppress("DEPRECATION")
 class NavBottomDialogActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNavBottomDialogBinding
     private lateinit var toggle: ActionBarDrawerToggle
@@ -74,6 +74,16 @@ class NavBottomDialogActivity : AppCompatActivity() {
 
         binding.fab.setOnClickListener { showBottomDialog() }
 
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
+                } else {
+                    isEnabled = false
+                    onBackPressedDispatcher.onBackPressed()
+                }
+            }
+        })
     }
 
     private fun replaceFragment(fragment: Fragment) {
@@ -140,15 +150,5 @@ class NavBottomDialogActivity : AppCompatActivity() {
     private fun logout() {
         Toast.makeText(this, "Logged out!", Toast.LENGTH_SHORT).show()
         // TODO: Clear session and navigate to LoginActivity
-    }
-
-
-    @Deprecated("Deprecated in Java")
-    override fun onBackPressed() {
-        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
     }
 }

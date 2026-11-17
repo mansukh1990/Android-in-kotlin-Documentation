@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AndroidWithKotlin.BottomAppBar.BottomAppBar">
+    tools:context=".AndroidWithKotlin.BottomAppBar.BottomAppBar"
+    tools:ignore="BottomAppBarRecommendation">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -27,6 +28,7 @@
         app:fabAlignmentMode="center"
         app:fabCradleMargin="5dp"
         app:menu="@menu/bottom_app_bar_menu"
-        app:navigationIcon="@drawable/ic_menu" />
+        app:navigationIcon="@drawable/ic_menu"
+        tools:ignore="BottomAppBarRecommendation" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
